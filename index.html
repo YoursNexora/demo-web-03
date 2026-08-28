@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta name="description" content="Aurelle — a luxury beauty atelier &amp; spa in Kensington, London. Hair, skin, nails and spa rituals, handcrafted since 2014.">
+  <title>Aurelle · Beauty Atelier &amp; Spa — Kensington, London</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p class="topbar-note"><i class="ph-light ph-map-pin"></i> 14 Rosewood Lane, Kensington — Est. 2014</p>
+      <p class="topbar-note">
+        <i class="ph-light ph-clock"></i> Mon–Sat 9:00–20:00
+        <span class="topbar-sep" aria-hidden="true"></span>
+        <a class="topbar-link" href="tel:+442079460818"><i class="ph-light ph-phone"></i> +44 20 7946 0818</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ STICKY NAVIGATION ============ -->
+  <header class="site-nav" id="siteNav">
+    <nav class="container nav-inner" aria-label="Primary">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true"><i class="ph-light ph-flower-lotus"></i></span>
+        <span class="brand-text">Aurelle<small>Beauty Atelier &amp; Spa</small></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#artists">Artists</a></li>
+        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="nav-phone" href="tel:+442079460818"><i class="ph-light ph-phone"></i> 020 7946 0818</a>
+        <button class="btn btn-primary btn-sm" type="button" data-open-booking>Book Appointment</button>
+        <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ MOBILE DRAWER ============ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="brand brand--drawer">
+        <span class="brand-mark" aria-hidden="true"><i class="ph-light ph-flower-lotus"></i></span>
+        <span class="brand-text">Aurelle<small>Beauty Atelier &amp; Spa</small></span>
+      </span>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><i class="ph-light ph-x"></i></button>
+    </div>
+
+    <nav class="drawer-nav" aria-label="Mobile">
+      <a class="drawer-link" style="--i:0" href="#services">Services</a>
+      <a class="drawer-link" style="--i:1" href="#artists">Artists</a>
+      <a class="drawer-link" style="--i:2" href="#gallery">Gallery</a>
+      <a class="drawer-link" style="--i:3" href="#testimonials">Testimonials</a>
+      <a class="drawer-link" style="--i:4" href="#contact">Contact</a>
+    </nav>
+
+    <div class="drawer-foot">
+      <a class="drawer-phone" href="tel:+442079460818"><i class="ph-light ph-phone"></i> +44 20 7946 0818</a>
+      <p class="drawer-hours"><i class="ph-light ph-clock"></i> Mon–Sat 9:00–20:00 · Sun 11:00–17:00</p>
+      <button class="btn btn-primary btn-block" type="button" data-open-booking>Book Appointment</button>
+    </div>
+  </aside>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Beauty Atelier &amp; Spa · Kensington</p>
+          <h1 class="hero-title reveal" style="--d:80ms">Elevate your <em>natural radiance</em></h1>
+          <p class="hero-lede reveal" style="--d:160ms">
+            A quiet atelier in the heart of Kensington, where colourists, skin therapists and nail artists
+            practice one craft — coaxing out the light that is already yours. No trends for trend's sake.
+            Just you, elevated.
+          </p>
+          <div class="hero-actions reveal" style="--d:240ms">
+            <button class="btn btn-primary" type="button" data-open-booking>
+              <span>Book an Appointment</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i>
+            </button>
+            <a class="link-arrow" href="#services">Explore the service menu <i class="ph-light ph-arrow-down-right" aria-hidden="true"></i></a>
+          </div>
+          <dl class="hero-stats reveal" style="--d:320ms">
+            <div class="stat">
+              <dd><span class="stat-num" data-count="10" data-suffix="+">0+</span></dd>
+              <dt>Years of artistry</dt>
+            </div>
+            <div class="stat">
+              <dd><span class="stat-num" data-count="5" data-suffix="k+">0</span></dd>
+              <dt>Glowing clients</dt>
+            </div>
+            <div class="stat">
+              <dd><span class="stat-num" data-count="4.9" data-decimals="1">0.0</span></dd>
+              <dt>Average rating</dt>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:200ms">
+          <figure class="hero-figure">
+            <img src="https://picsum.photos/seed/aurelle-atelier/760/950.jpg" alt="A guest receiving a treatment in the Aurelle atelier" width="760" height="950" fetchpriority="high">
+            <figcaption class="hero-chip"><span class="pulse-dot" aria-hidden="true"></span> Now booking · Winter radiance rituals</figcaption>
+          </figure>
+          <figure class="hero-figure-sm">
+            <img src="https://picsum.photos/seed/aurelle-detail/460/340.jpg" alt="Detail of a finished balayage" width="460" height="340" loading="lazy" decoding="async">
+          </figure>
+          <div class="hero-badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="badgeCircle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#badgeCircle">AURELLE ATELIER · EST. 2014 · KENSINGTON ·</textPath></text>
+            </svg>
+            <i class="ph-light ph-flower-lotus"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Hand-Painted Balayage<i class="ph-light ph-sparkle"></i></span>
+          <span>Japanese Head Spa<i class="ph-light ph-sparkle"></i></span>
+          <span>24K Gold Radiance<i class="ph-light ph-sparkle"></i></span>
+          <span>Russian Manicure<i class="ph-light ph-sparkle"></i></span>
+          <span>Basalt Stone Rituals<i class="ph-light ph-sparkle"></i></span>
+          <span>Bridal Artistry<i class="ph-light ph-sparkle"></i></span>
+          <span>DermaSculpt Contour<i class="ph-light ph-sparkle"></i></span>
+          <span>Silk-Press &amp; Waves<i class="ph-light ph-sparkle"></i></span>
+        </div>
+        <div class="marquee-group">
+          <span>Hand-Painted Balayage<i class="ph-light ph-sparkle"></i></span>
+          <span>Japanese Head Spa<i class="ph-light ph-sparkle"></i></span>
+          <span>24K Gold Radiance<i class="ph-light ph-sparkle"></i></span>
+          <span>Russian Manicure<i class="ph-light ph-sparkle"></i></span>
+          <span>Basalt Stone Rituals<i class="ph-light ph-sparkle"></i></span>
+          <span>Bridal Artistry<i class="ph-light ph-sparkle"></i></span>
+          <span>DermaSculpt Contour<i class="ph-light ph-sparkle"></i></span>
+          <span>Silk-Press &amp; Waves<i class="ph-light ph-sparkle"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section" id="services">
+      <div class="container">
+
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">The Service Menu</p>
+            <h2 class="title">Treatments &amp; <em>rituals</em></h2>
+          </div>
+          <p class="lede">Every price is final — consultation, ritual cleanse and aftercare included.
+            Colour services require a patch test 48 hours ahead; we arrange it the moment you book.</p>
+        </div>
+
+        <div class="tabs-wrap reveal">
+
+          <div class="tab-list" role="tablist" aria-label="Service categories" id="serviceTabs">
+            <button class="tab-btn is-active" type="button" role="tab" id="tab-hair" aria-controls="panel-hair" aria-selected="true" data-tab="hair">Hair Styling</button>
+            <button class="tab-btn" type="button" role="tab" id="tab-skin" aria-controls="panel-skin" aria-selected="false" data-tab="skin">Skincare &amp; Facials</button>
+            <button class="tab-btn" type="button" role="tab" id="tab-nails" aria-controls="panel-nails" aria-selected="false" data-tab="nails">Nail Art</button>
+            <button class="tab-btn" type="button" role="tab" id="tab-spa" aria-controls="panel-spa" aria-selected="false" data-tab="spa">Spa &amp; Massage</button>
+            <span class="tab-ink" aria-hidden="true"></span>
+          </div>
+
+          <!-- HAIR -->
+          <div class="tab-panel is-active" role="tabpanel" id="panel-hair" aria-labelledby="tab-hair">
+            <div class="panel-grid">
+              <ul class="service-list">
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">The Signature Cut &amp; Finish</h3>
+                    <p class="service-desc">Consultation, ritual double-cleanse, precision cut and a dressed finish — tailored to how you actually live.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>75 min</span>
+                    <span class="service-price">£95</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="The Signature Cut &amp; Finish">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Hand-Painted Balayage</h3>
+                    <p class="service-desc">Freehand dimension painted under natural light, sealed with a bespoke gloss and bond-builder.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>3 hrs</span>
+                    <span class="service-price">£185</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Hand-Painted Balayage">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Full Head Colour &amp; Gloss</h3>
+                    <p class="service-desc">Even, luminous coverage with an ammonia-low formula and a shine seal that photographs beautifully.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>2 hrs 30</span>
+                    <span class="service-price">£160</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Full Head Colour &amp; Gloss">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Keratin Smoothing Ritual</h3>
+                    <p class="service-desc">Humidity-proof silk for up to sixteen weeks. Frizz silenced, movement preserved.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>2 hrs 30</span>
+                    <span class="service-price">£210</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Keratin Smoothing Ritual">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Editorial Blow-Dry &amp; Wave Set</h3>
+                    <p class="service-desc">Red-carpet volume or soft S-waves, set to last three days and survive Central Line.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>1 hr</span>
+                    <span class="service-price">£58</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Editorial Blow-Dry &amp; Wave Set">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Colour Correction Studio</h3>
+                    <p class="service-desc">A bespoke rescue plan for box-dye regrets — mapped out after a strand test and a proper conversation.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>45 min consult</span>
+                    <span class="service-price">£45*</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Colour Correction Studio">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+              </ul>
+              <aside class="service-aside">
+                <figure><img src="https://picsum.photos/seed/aurelle-menu-hair/520/650.jpg" alt="Balayage work in progress" loading="lazy" decoding="async"></figure>
+                <h3>Most loved this season</h3>
+                <p>Hand-painted balayage. Elena paints dimension that grows out beautifully for six months — no brassy lines, no endless upkeep.</p>
+                <p class="aside-note"><i class="ph-light ph-drop" aria-hidden="true"></i> Every colour service opens with a complimentary strand test — over jasmine tea, on us. <em>*Consult fee is redeemable against your first appointment.</em></p>
+              </aside>
+            </div>
+          </div>
+
+          <!-- SKIN -->
+          <div class="tab-panel" role="tabpanel" id="panel-skin" aria-labelledby="tab-skin" hidden>
+            <div class="panel-grid">
+              <ul class="service-list">
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">HydraLuxe Deep-Cleanse Facial</h3>
+                    <p class="service-desc">Six phases — steam, enzymatic resurfacing, gentle extraction, infusion, mask, lymphatic massage.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>60 min</span>
+                    <span class="service-price">£110</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="HydraLuxe Deep-Cleanse Facial">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">24K Gold Radiance Ritual</h3>
+                    <p class="service-desc">Colloidal gold and caviar-collagen layers for event-ready luminosity that lasts the weekend.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>75 min</span>
+                    <span class="service-price">£145</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="24K Gold Radiance Ritual">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">DermaSculpt Contour Massage</h3>
+                    <p class="service-desc">Buccal and lymphatic sculpting that lifts, drains and re-oxygenates — our pre-red-carpet secret.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>50 min</span>
+                    <span class="service-price">£95</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="DermaSculpt Contour Massage">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Enzyme Resurfacing Peel</h3>
+                    <p class="service-desc">Papaya and pumpkin enzymes refine texture with zero downtime — glow on your lunch break.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>45 min</span>
+                    <span class="service-price">£85</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Enzyme Resurfacing Peel">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Eye Recovery Therapy</h3>
+                    <p class="service-desc">Caviar-collagen masks and acupressure for tired, travel-worn eyes.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>25 min</span>
+                    <span class="service-price">£55</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Eye Recovery Therapy">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+              </ul>
+              <aside class="service-aside">
+                <figure><img src="https://picsum.photos/seed/aurelle-menu-skin/520/650.jpg" alt="Facial treatment room" loading="lazy" decoding="async"></figure>
+                <h3>Most loved this season</h3>
+                <p>The 24K Gold Radiance Ritual — booked solid before every wedding season and awards night.</p>
+                <p class="aside-note"><i class="ph-light ph-drop" aria-hidden="true"></i> Book any facial as a series of three and the fourth session is our gift. Skin changes in threes, not ones.</p>
+              </aside>
+            </div>
+          </div>
+
+          <!-- NAILS -->
+          <div class="tab-panel" role="tabpanel" id="panel-nails" aria-labelledby="tab-nails" hidden>
+            <div class="panel-grid">
+              <ul class="service-list">
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Russian Cuticle Manicure</h3>
+                    <p class="service-desc">Dry-machine precision cuticle work, immaculate for weeks — the tidiest manicure in London.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>75 min</span>
+                    <span class="service-price">£60</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Russian Cuticle Manicure">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">BIAB Structure Overlay</h3>
+                    <p class="service-desc">Builder-gel armour for natural nails that finally grow — strength without bulk.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>90 min</span>
+                    <span class="service-price">£72</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="BIAB Structure Overlay">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Gel Couture Lacquer</h3>
+                    <p class="service-desc">Forty-plus pigments, chip-free for three weeks, finished with cuticle oil and a hand massage.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>60 min</span>
+                    <span class="service-price">£48</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Gel Couture Lacquer">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Hand-Painted Nail Art</h3>
+                    <p class="service-desc">Miniature brushwork — florals, chrome, ombré, or the idea you bring in on your phone.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>from 15 min</span>
+                    <span class="service-price">£6 / nail</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Hand-Painted Nail Art">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Basalt Stone Pedicure</h3>
+                    <p class="service-desc">Warm stones, a sea-salt soak and a buffed mirror finish — walk out barefoot-proud.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>75 min</span>
+                    <span class="service-price">£68</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Basalt Stone Pedicure">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+              </ul>
+              <aside class="service-aside">
+                <figure><img src="https://picsum.photos/seed/aurelle-menu-nails/520/650.jpg" alt="Nail art detail" loading="lazy" decoding="async"></figure>
+                <h3>Most loved this season</h3>
+                <p>BIAB Structure Overlay. Our record for one guest's natural-nail journey: from bitten to ballerina in five months flat.</p>
+                <p class="aside-note"><i class="ph-light ph-drop" aria-hidden="true"></i> Nail art is quoted per nail at your appointment — bring a screenshot, we genuinely love a brief.</p>
+              </aside>
+            </div>
+          </div>
+
+          <!-- SPA -->
+          <div class="tab-panel" role="tabpanel" id="panel-spa" aria-labelledby="tab-spa" hidden>
+            <div class="panel-grid">
+              <ul class="service-list">
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Japanese Head Spa</h3>
+                    <p class="service-desc">Steam, scalp analysis, acupressure and serum infusion — our most rebooked ritual, by a mile.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>60 min</span>
+                    <span class="service-price">£90</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Japanese Head Spa">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Warm Basalt Stone Massage</h3>
+                    <p class="service-desc">Heated volcanic stones melt deep-held tension along the spine and shoulders.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>75 min</span>
+                    <span class="service-price">£115</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Warm Basalt Stone Massage">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Deep Tissue Recovery</h3>
+                    <p class="service-desc">Firm, targeted work for desk-bound shoulders and runners' legs.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>60 min</span>
+                    <span class="service-price">£105</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Deep Tissue Recovery">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Aromatherapy Journey</h3>
+                    <p class="service-desc">Oils blended at the table for your mood — deep calm or clear-headed, your call.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>90 min</span>
+                    <span class="service-price">£135</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Aromatherapy Journey">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+                <li class="service-row">
+                  <div class="service-info">
+                    <h3 class="service-name">Mother-to-Be Comfort Ritual</h3>
+                    <p class="service-desc">Side-lying massage with bolstered support, second and third trimester.</p>
+                  </div>
+                  <p class="service-meta">
+                    <span class="service-duration"><i class="ph-light ph-clock"></i>60 min</span>
+                    <span class="service-price">£95</span>
+                  </p>
+                  <button class="service-book" type="button" data-open-booking data-service="Mother-to-Be Comfort Ritual">Reserve <i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+                </li>
+              </ul>
+              <aside class="service-aside">
+                <figure><img src="https://picsum.photos/seed/aurelle-menu-spa/520/650.jpg" alt="Spa tranquillity lounge" loading="lazy" decoding="async"></figure>
+                <h3>Most loved this season</h3>
+                <p>The Japanese Head Spa — the first appointment most guests rebook before they've even left.</p>
+                <p class="aside-note"><i class="ph-light ph-drop" aria-hidden="true"></i> Arrive fifteen minutes early to unwind in the tranquillity lounge — herbal tea and silence, both complimentary.</p>
+              </aside>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARTISTS ============ -->
+    <section class="artists section" id="artists">
+      <div class="container">
+
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">The Artists</p>
+            <h2 class="title">Hands you can <em>trust</em></h2>
+          </div>
+          <p class="lede">Thirty-two colourists, therapists and nail artists in residence. We hire for obsession,
+            then train for years. Meet the four who lead the floor.</p>
+        </div>
+
+        <div class="artists-grid">
+          <div class="artists-intro reveal">
+            <p class="intro-quote">"A great appointment ends when the guest forgets we were ever anything but effortless."</p>
+            <p class="intro-text">Every senior artist mentors a junior on the floor — nothing leaves this house
+              unchecked, unpractised or unloved. It is slower work. It is also why our guests rarely leave.</p>
+            <ul class="intro-facts">
+              <li><strong>32</strong> artists in residence</li>
+              <li><strong>14</strong> nationalities, one standard</li>
+              <li><strong>160 hrs</strong> of training each, per year</li>
+            </ul>
+            <a class="link-arrow" href="https://instagram.com/aurelle.atelier" target="_blank" rel="noopener">Follow the studio on Instagram <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="artists-cards" data-reveal-stagger>
+            <article class="artist-card">
+              <figure class="artist-photo">
+                <img src="https://picsum.photos/seed/aurelle-elena/520/680.jpg" alt="Elena Marchetti, Creative Director of Colour" loading="lazy" decoding="async">
+                <span class="artist-since">With Aurelle since 2015</span>
+              </figure>
+              <h3 class="artist-name">Elena Marchetti</h3>
+              <p class="artist-role">Creative Director · Colour</p>
+              <p class="artist-spec">Balayage, lived-in colour, correction</p>
+              <a class="artist-ig" href="https://instagram.com/elena.aurelle" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i> @elena.aurelle</a>
+            </article>
+
+            <article class="artist-card">
+              <figure class="artist-photo">
+                <img src="https://picsum.photos/seed/aurelle-sofia/520/680.jpg" alt="Sofia Lang, Senior Skin Therapist" loading="lazy" decoding="async">
+                <span class="artist-since">With Aurelle since 2017</span>
+              </figure>
+              <h3 class="artist-name">Sofia Lang</h3>
+              <p class="artist-role">Senior Skin Therapist</p>
+              <p class="artist-spec">Barrier repair, sculpting facials, rosacea care</p>
+              <a class="artist-ig" href="https://instagram.com/sofia.skinrituals" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i> @sofia.skinrituals</a>
+            </article>
+
+            <article class="artist-card">
+              <figure class="artist-photo">
+                <img src="https://picsum.photos/seed/aurelle-priya/520/680.jpg" alt="Priya Nair, Lead Nail Artist" loading="lazy" decoding="async">
+                <span class="artist-since">With Aurelle since 2019</span>
+              </figure>
+              <h3 class="artist-name">Priya Nair</h3>
+              <p class="artist-role">Lead Nail Artist</p>
+              <p class="artist-spec">Miniature brushwork, chrome, structure</p>
+              <a class="artist-ig" href="https://instagram.com/priya.paints.nails" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i> @priya.paints.nails</a>
+            </article>
+
+            <article class="artist-card">
+              <figure class="artist-photo">
+                <img src="https://picsum.photos/seed/aurelle-marco/520/680.jpg" alt="Marco Reyes, Master Stylist and Bridal Specialist" loading="lazy" decoding="async">
+                <span class="artist-since">With Aurelle since 2016</span>
+              </figure>
+              <h3 class="artist-name">Marco Reyes</h3>
+              <p class="artist-role">Master Stylist · Bridal</p>
+              <p class="artist-spec">Silk-press, editorial waves, bridal artistry</p>
+              <a class="artist-ig" href="https://instagram.com/marco.aurelle" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i> @marco.aurelle</a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery-section section" id="gallery">
+      <div class="container">
+
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">The Portfolio</p>
+            <h2 class="title">Evidence of <em>glow</em></h2>
+          </div>
+          <p class="lede">Real guests, real light, no filters. Start with the seam below — drag it and witness
+            one of Elena's signature transformations for yourself.</p>
+        </div>
+
+        <!-- Before / After comparison -->
+        <div class="ba reveal" id="baSlider" style="--pos:50%;">
+          <div class="ba-after">
+            <img src="https://picsum.photos/seed/aurelle-transform/1400/900.jpg" alt="Hair colour after Elena's correction work" draggable="false" loading="lazy" decoding="async">
+          </div>
+          <div class="ba-before">
+            <img src="https://picsum.photos/seed/aurelle-transform/1400/900.jpg" alt="" aria-hidden="true" draggable="false" loading="lazy" decoding="async">
+            <span class="ba-tag ba-tag-before">Before</span>
+          </div>
+          <span class="ba-tag ba-tag-after">After</span>
+          <div class="ba-handle" id="baHandle" role="slider" tabindex="0" aria-label="Reveal the transformation" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <span class="ba-grip" aria-hidden="true"><i class="ph-light ph-caret-left"></i><i class="ph-light ph-caret-right"></i></span>
+          </div>
+          <span class="ba-hint" id="baHint"><i class="ph-light ph-hand-grabbing" aria-hidden="true"></i> Drag to compare</span>
+        </div>
+        <p class="ba-caption reveal">Colour correction by Elena — eight hours across two sittings, brass to butter-blond, one very happy guest.</p>
+
+        <!-- Filter + grid -->
+        <div class="filter-bar reveal" role="group" aria-label="Filter the gallery">
+          <button class="filter-btn is-active" type="button" data-filter="all">All work</button>
+          <button class="filter-btn" type="button" data-filter="hair">Hair</button>
+          <button class="filter-btn" type="button" data-filter="nails">Nails</button>
+          <button class="filter-btn" type="button" data-filter="makeup">Makeup</button>
+          <button class="filter-btn" type="button" data-filter="skin">Skin</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid" data-reveal-stagger>
+          <figure class="g-item g-tall" data-cat="hair"><img src="https://picsum.photos/seed/aurelle-work-1/600/900.jpg" alt="Copper gloss transformation" loading="lazy" decoding="async"><figcaption><span class="g-cat">Hair</span><span class="g-title">Copper gloss transformation</span></figcaption></figure>
+          <figure class="g-item" data-cat="nails"><img src="https://picsum.photos/seed/aurelle-work-2/600/600.jpg" alt="Hand-painted iris nail set" loading="lazy" decoding="async"><figcaption><span class="g-cat">Nails</span><span class="g-title">Hand-painted iris set</span></figcaption></figure>
+          <figure class="g-item" data-cat="makeup"><img src="https://picsum.photos/seed/aurelle-work-3/600/600.jpg" alt="Soft-glam bridal makeup" loading="lazy" decoding="async"><figcaption><span class="g-cat">Makeup</span><span class="g-title">Soft-glam bridal</span></figcaption></figure>
+          <figure class="g-item g-wide" data-cat="skin"><img src="https://picsum.photos/seed/aurelle-work-4/900/600.jpg" alt="Skin glow immediately after a HydraLuxe facial" loading="lazy" decoding="async"><figcaption><span class="g-cat">Skin</span><span class="g-title">The HydraLuxe glow</span></figcaption></figure>
+          <figure class="g-item" data-cat="hair"><img src="https://picsum.photos/seed/aurelle-work-5/600/600.jpg" alt="Lived-in French balayage" loading="lazy" decoding="async"><figcaption><span class="g-cat">Hair</span><span class="g-title">Lived-in French balayage</span></figcaption></figure>
+          <figure class="g-item g-tall" data-cat="nails"><img src="https://picsum.photos/seed/aurelle-work-6/600/900.jpg" alt="Chrome French tips" loading="lazy" decoding="async"><figcaption><span class="g-cat">Nails</span><span class="g-title">Chrome French tips</span></figcaption></figure>
+          <figure class="g-item" data-cat="makeup"><img src="https://picsum.photos/seed/aurelle-work-7/600/600.jpg" alt="Editorial bronze makeup look" loading="lazy" decoding="async"><figcaption><span class="g-cat">Makeup</span><span class="g-title">Editorial bronze</span></figcaption></figure>
+          <figure class="g-item" data-cat="skin"><img src="https://picsum.photos/seed/aurelle-work-8/600/600.jpg" alt="DermaSculpt contour massage in session" loading="lazy" decoding="async"><figcaption><span class="g-cat">Skin</span><span class="g-title">DermaSculpt contour</span></figcaption></figure>
+          <figure class="g-item g-wide" data-cat="hair"><img src="https://picsum.photos/seed/aurelle-work-9/900/600.jpg" alt="Silk-press and wave set" loading="lazy" decoding="async"><figcaption><span class="g-cat">Hair</span><span class="g-title">Silk-press &amp; wave set</span></figcaption></figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--center">Kind Words</p>
+          <h2 class="title">Guests, <em>verbatim</em></h2>
+        </div>
+
+        <div class="carousel reveal" id="tCarousel">
+          <div class="car-viewport" id="tViewport">
+            <div class="car-track" id="tTrack">
+
+              <article class="t-slide">
+                <p class="t-stars" aria-label="Rated 5 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+                <blockquote class="t-quote">"I came in with a photograph and a lot of doubt. Elena read my hair like a manuscript and painted dimension I didn't know it could hold. Six months on, it's still growing out beautifully."</blockquote>
+                <footer class="t-person">
+                  <img class="t-avatar" src="https://picsum.photos/seed/guest-charlotte/120/120.jpg" alt="" loading="lazy">
+                  <div>
+                    <p class="t-name">Charlotte E.</p>
+                    <p class="t-meta">Balayage &amp; Gloss · March 2025</p>
+                  </div>
+                  <span class="t-verified"><i class="ph-light ph-seal-check" aria-hidden="true"></i>Verified visit</span>
+                </footer>
+              </article>
+
+              <article class="t-slide">
+                <p class="t-stars" aria-label="Rated 5 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+                <blockquote class="t-quote">"The Japanese head spa is forty-five minutes of complete theatre — steam, warm oils, that final wash. I booked three more before I'd even left the building."</blockquote>
+                <footer class="t-person">
+                  <img class="t-avatar" src="https://picsum.photos/seed/guest-amara/120/120.jpg" alt="" loading="lazy">
+                  <div>
+                    <p class="t-name">Amara O.</p>
+                    <p class="t-meta">Japanese Head Spa · January 2025</p>
+                  </div>
+                  <span class="t-verified"><i class="ph-light ph-seal-check" aria-hidden="true"></i>Verified visit</span>
+                </footer>
+              </article>
+
+              <article class="t-slide">
+                <p class="t-stars" aria-label="Rated 5 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+                <blockquote class="t-quote">"Priya painted miniature irises across my nails from a photo of my grandmother's garden. Strangers still stop me on the Tube to ask about them."</blockquote>
+                <footer class="t-person">
+                  <img class="t-avatar" src="https://picsum.photos/seed/guest-daisy/120/120.jpg" alt="" loading="lazy">
+                  <div>
+                    <p class="t-name">Daisy R.</p>
+                    <p class="t-meta">Hand-Painted Nail Art · February 2025</p>
+                  </div>
+                  <span class="t-verified"><i class="ph-light ph-seal-check" aria-hidden="true"></i>Verified visit</span>
+                </footer>
+              </article>
+
+              <article class="t-slide">
+                <p class="t-stars" aria-label="Rated 5 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+                <blockquote class="t-quote">"After years of over-exfoliating, Sofia rebuilt my skin barrier with patience and zero judgement. Three sessions in, my rosacea has quietened and I've stopped wearing foundation altogether."</blockquote>
+                <footer class="t-person">
+                  <img class="t-avatar" src="https://picsum.photos/seed/guest-helen/120/120.jpg" alt="" loading="lazy">
+                  <div>
+                    <p class="t-name">Helen W.</p>
+                    <p class="t-meta">HydraLuxe Facial Series · November 2024</p>
+                  </div>
+                  <span class="t-verified"><i class="ph-light ph-seal-check" aria-hidden="true"></i>Verified visit</span>
+                </footer>
+              </article>
+
+              <article class="t-slide">
+                <p class="t-stars" aria-label="Rated 5 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+                <blockquote class="t-quote">"Marco did my bridal trial two months early, answered every nervous voice note, and on the day my hair survived happy tears, a rain shower and six hours of dancing."</blockquote>
+                <footer class="t-person">
+                  <img class="t-avatar" src="https://picsum.photos/seed/guest-priyanka/120/120.jpg" alt="" loading="lazy">
+                  <div>
+                    <p class="t-name">Priyanka S.</p>
+                    <p class="t-meta">Bridal Hair &amp; Makeup · September 2024</p>
+                  </div>
+                  <span class="t-verified"><i class="ph-light ph-seal-check" aria-hidden="true"></i>Verified visit</span>
+                </footer>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="car-controls">
+            <button class="car-btn" id="tPrev" type="button" aria-label="Previous testimonial"><i class="ph-light ph-caret-left" aria-hidden="true"></i></button>
+            <div class="car-dots" id="tDots"></div>
+            <button class="car-btn" id="tNext" type="button" aria-label="Next testimonial"><i class="ph-light ph-caret-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="container cta-inner reveal">
+        <div class="ornament" aria-hidden="true"><span></span><i class="ph-light ph-flower-lotus"></i><span></span></div>
+        <p class="eyebrow eyebrow--center">Reservations</p>
+        <h2 class="title">Your chair is <em>waiting</em></h2>
+        <p class="cta-lede">First visits open with a complimentary fifteen-minute consultation — no obligation, just an
+          honest conversation about your hair, your skin and your time. Evenings and Saturdays go quickly.</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary" type="button" data-open-booking>
+            <span>Book an appointment</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i>
+          </button>
+          <a class="btn btn-ghost" href="tel:+442079460818"><i class="ph-light ph-phone" aria-hidden="true"></i> 020 7946 0818</a>
+        </div>
+        <p class="cta-fine">Open Monday to Sunday · Two minutes from High Street Kensington</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#home">
+            <span class="brand-mark" aria-hidden="true"><i class="ph-light ph-flower-lotus"></i></span>
+            <span class="brand-text">Aurelle<small>Beauty Atelier &amp; Spa</small></span>
+          </a>
+          <p class="footer-blurb">A quiet house of colour, skin and stillness in the heart of Kensington. Established 2014.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/aurelle.atelier" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph-light ph-instagram-logo"></i></a>
+            <a href="https://facebook.com/aurelle.atelier" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph-light ph-facebook-logo"></i></a>
+            <a href="https://tiktok.com/@aurelle.atelier" target="_blank" rel="noopener" aria-label="TikTok"><i class="ph-light ph-tiktok-logo"></i></a>
+            <a href="https://wa.me/442079460818" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ph-light ph-whatsapp-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <address>14 Rosewood Lane<br>Kensington, London W8 4AB</address>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="https://maps.google.com/?q=14+Rosewood+Lane+Kensington+London" target="_blank" rel="noopener"><i class="ph-light ph-map-pin" aria-hidden="true"></i> Find us on Google Maps</a></li>
+            <li><a class="footer-link" href="tel:+442079460818"><i class="ph-light ph-phone" aria-hidden="true"></i> +44 20 7946 0818</a></li>
+            <li><a class="footer-link" href="mailto:hello@aurelle.co.uk"><i class="ph-light ph-envelope-simple" aria-hidden="true"></i> hello@aurelle.co.uk</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul class="hours-list" id="hoursList">
+            <li data-day="1"><span>Monday</span><span>9:00 – 20:00</span></li>
+            <li data-day="2"><span>Tuesday</span><span>9:00 – 20:00</span></li>
+            <li data-day="3"><span>Wednesday</span><span>9:00 – 20:00</span></li>
+            <li data-day="4"><span>Thursday</span><span>9:00 – 20:00</span></li>
+            <li data-day="5"><span>Friday</span><span>9:00 – 20:00</span></li>
+            <li data-day="6"><span>Saturday</span><span>9:00 – 18:00</span></li>
+            <li data-day="0"><span>Sunday</span><span>11:00 – 17:00</span></li>
+          </ul>
+          <p class="hours-note">Bank holidays 11:00 – 17:00</p>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>The Inner Circle</h4>
+          <p>One letter a month — seasonal rituals, artist openings and first access to limited appointments.</p>
+          <form class="news-form" id="newsForm" novalidate>
+            <label class="visually-hidden" for="newsEmail">Email address</label>
+            <div class="news-field">
+              <input type="email" id="newsEmail" placeholder="Your email address" autocomplete="email">
+              <button type="submit" aria-label="Subscribe"><i class="ph-light ph-paper-plane-tilt" aria-hidden="true"></i></button>
+            </div>
+            <p class="field-error field-error--dark" id="newsError" hidden></p>
+            <p class="news-success" id="newsSuccess" hidden><i class="ph-light ph-check" aria-hidden="true"></i> Welcome to the inner circle — your first letter arrives soon.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2025</span> Aurelle Beauty Atelier Ltd. All rights reserved.</p>
+        <p>Crafted by hand in Kensington — like everything we do.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============ BOOKING MODAL ============ -->
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle" id="bookingPanel">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close booking form"><i class="ph-light ph-x"></i></button>
+      <div class="modal-scroll">
+
+        <div class="modal-head">
+          <p class="eyebrow">Reservations</p>
+          <h3 id="bookingTitle" tabindex="-1">Book your visit</h3>
+          <p class="modal-sub">Tell us what you're dreaming of — a concierge will confirm by phone or email within two working hours.</p>
+        </div>
+
+        <form class="booking-form" id="bookingForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="bkName">Full name</label>
+              <input id="bkName" type="text" autocomplete="name" placeholder="e.g. Camille Ashworth">
+              <p class="field-error" id="bkNameError" hidden></p>
+            </div>
+            <div class="field">
+              <label for="bkPhone">Phone</label>
+              <input id="bkPhone" type="tel" autocomplete="tel" placeholder="+44 ··· ··· ·····">
+              <p class="field-error" id="bkPhoneError" hidden></p>
+            </div>
+            <div class="field field--full">
+              <label for="bkEmail">Email</label>
+              <input id="bkEmail" type="email" autocomplete="email" placeholder="you@example.com">
+              <p class="field-error" id="bkEmailError" hidden></p>
+            </div>
+            <div class="field field--full">
+              <label for="bkService">Treatment</label>
+              <select id="bkService">
+                <option value="" selected disabled>Choose a treatment…</option>
+                <optgroup label="Hair Styling">
+                  <option>The Signature Cut &amp; Finish</option>
+                  <option>Hand-Painted Balayage</option>
+                  <option>Full Head Colour &amp; Gloss</option>
+                  <option>Keratin Smoothing Ritual</option>
+                  <option>Editorial Blow-Dry &amp; Wave Set</option>
+                  <option>Colour Correction Studio</option>
+                </optgroup>
+                <optgroup label="Skincare &amp; Facials">
+                  <option>HydraLuxe Deep-Cleanse Facial</option>
+                  <option>24K Gold Radiance Ritual</option>
+                  <option>DermaSculpt Contour Massage</option>
+                  <option>Enzyme Resurfacing Peel</option>
+                  <option>Eye Recovery Therapy</option>
+                </optgroup>
+                <optgroup label="Nail Art">
+                  <option>Russian Cuticle Manicure</option>
+                  <option>BIAB Structure Overlay</option>
+                  <option>Gel Couture Lacquer</option>
+                  <option>Hand-Painted Nail Art</option>
+                  <option>Basalt Stone Pedicure</option>
+                </optgroup>
+                <optgroup label="Spa &amp; Massage">
+                  <option>Japanese Head Spa</option>
+                  <option>Warm Basalt Stone Massage</option>
+                  <option>Deep Tissue Recovery</option>
+                  <option>Aromatherapy Journey</option>
+                  <option>Mother-to-Be Comfort Ritual</option>
+                </optgroup>
+              </select>
+              <p class="field-error" id="bkServiceError" hidden></p>
+            </div>
+            <div class="field field--full">
+              <label for="bkStylist">Preferred artist <span class="label-optional">optional</span></label>
+              <select id="bkStylist">
+                <option value="First available" selected>First available</option>
+                <option>Elena Marchetti</option>
+                <option>Sofia Lang</option>
+                <option>Priya Nair</option>
+                <option>Marco Reyes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bkDate">Date</label>
+              <input id="bkDate" type="date">
+              <p class="field-error" id="bkDateError" hidden></p>
+            </div>
+            <div class="field">
+              <label for="bkTime">Time</label>
+              <select id="bkTime">
+                <option value="" selected disabled>Preferred time</option>
+              </select>
+              <p class="field-error" id="bkTimeError" hidden></p>
+            </div>
+            <div class="field field--full">
+              <label for="bkNotes">Anything we should know? <span class="label-optional">optional</span></label>
+              <textarea id="bkNotes" rows="3" placeholder="Allergies, occasion, inspiration photos…"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit" id="bkSubmit">
+            <span class="btn-label" id="bkSubmitLabel">Request appointment</span>
+            <span class="spinner" aria-hidden="true"></span>
+            <i class="ph-light ph-arrow-right btn-icon" aria-hidden="true"></i>
+          </button>
+          <p class="form-footnote"><i class="ph-light ph-shield-check" aria-hidden="true"></i> No prepayment — you're charged on the day. Cancel freely up to 24 hours ahead.</p>
+        </form>
+
+        <div class="modal-success" id="bookingSuccess" hidden>
+          <div class="success-badge" id="successBadge">
+            <svg viewBox="0 0 96 96" width="84" height="84" fill="none" aria-hidden="true">
+              <circle class="s-ring" cx="48" cy="48" r="44" stroke="#C5A089" stroke-width="2"/>
+              <path class="s-check" d="M31 49.5 43 61.5 66 36.5" stroke="#1A3029" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>You're on the books</h3>
+          <p class="success-sub">We've pencilled you in. Here's the summary — a concierge will confirm shortly.</p>
+          <ul class="success-summary" id="successSummary"></ul>
+          <button class="btn btn-primary btn-block" id="successClose" type="button">Wonderful, done</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i class="ph-light ph-sparkle" aria-hidden="true"></i><span id="toastMsg"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
